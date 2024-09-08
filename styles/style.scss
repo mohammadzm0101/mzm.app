@@ -1,5 +1,6 @@
 @import "variable";
 @import "impotant-vars";
+
 font-face {
   font-family: "Vazirmatn";
   src: url("fonts/webfonts/Vazirmatn[wght].woff2")
@@ -18,9 +19,16 @@ font-face {
   list-style-type: none;
   box-sizing: border-box;
 }
+// beacause if topnav bottom color
+html {
+  height: 100%;
+  min-height: 100%;
+}
 body {
   background-color: #f5f5f5;
   margin: 0;
+  //  top navbar bottom
+  // display: table;
   .font-english {
     @include font-english;
   }
@@ -37,8 +45,80 @@ body {
     grid-row-end: auto;
     position: relative;
     text-align: center;
-    background: linear-gradient(60deg, $backgroundColor2, $backgroundColor3);
+    background-color: $backgroundColor5;
+    // background: linear-gradient(60deg, $backgroundColor2, $backgroundColor3);
     color: $color1;
+    .topNav {
+      text-align: center;
+      width: 50%;
+      min-height: 100%;
+      vertical-align: middle;
+      display: table-cell;
+      .btn-1 {
+        background: #a188fc; /* Old browsers */
+        background: -moz-linear-gradient(
+          left,
+          #a188fc 0%,
+          #2eeade 50%,
+          #a188fc 100%
+        ); /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+          left,
+          #a188fc 0%,
+          #2eeade 50%,
+          #a188fc 100%
+        ); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(
+          to right,
+          #a188fc 0%,
+          #2eeade 50%,
+          #a188fc 100%
+        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a188fc', endColorstr='#a188fc',GradientType=1 ); /* IE6-9 */
+        background-size: 200%;
+        background-position: 100%;
+        color: #ccffff;
+        padding: 1em 3em;
+        border-radius: 2em;
+        display: inline-block;
+        box-shadow: 0 0 20px #229999;
+        text-shadow: 0 0 5px #000;
+        -webkit-transition: all 0.7s;
+        -moz-transition: all 0.7s;
+        transition: all 0.7s;
+        border: solid 1px #333;
+      }
+      .btn-1:hover {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a188fc+0,2eeade+100 */
+        background: #a188fc; /* Old browsers */
+        background: -moz-linear-gradient(
+          left,
+          #a188fc 0%,
+          #2eeade 50%,
+          #a188fc 100%
+        ); /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+          left,
+          #a188fc 0%,
+          #2eeade 50%,
+          #a188fc 100%
+        ); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(
+          to right,
+          #a188fc 0%,
+          #2eeade 50%,
+          #a188fc 100%
+        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a188fc', endColorstr='#a188fc',GradientType=1 ); /* IE6-9 */
+        background-size: 200%;
+        background-position: 0px;
+        box-shadow: 0 0 40px #55ffff;
+        color: #ccffff;
+        text-shadow: 0 0 30px #000000;
+        border: solid 1px #ccffff;
+      }
+    }
+
     // box inside header
     .waves {
       position: relative;

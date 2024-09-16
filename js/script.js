@@ -1,3 +1,7 @@
 const mamadooo = "regret";
 const $mzm = "ok";  //for comment 
-window.alert(ho ho )
+let person = "john",
+lastName = "adam",
+age = 100;
+let carName;
+console.log('mamali kako');

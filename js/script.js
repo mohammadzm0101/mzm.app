@@ -1,27 +1,20 @@
-const mamadooo = "regret";
-const $mzm = "ok";  //for comment 
-let person = "john",
-lastName = "adam",
-age = 100;
-let carName;
-const register = {
-    name : 'okjj',
-    lastName : 'hi',
+const person1 = {
+    name: "john",
+    family: "johni"
 };
-console.log(register["name"]);
-const someone = {
-    firstName : "jow",
-    lastName : "gandom",
-    fullName : function() {
-        return this.firstName;
-    },
-    otherPerson = {
-        car4 : "ok", 
-        car5 : "you"
-    }
+let text = "";
+for (let x in person1) {
+    text += person1[x] + " ";
+};
+function student_22(age, jender, father, mothher) {
+    this.age = age,
+        this.jender = jender,
+        this.father = father,
+        this.mother = mothher
+};
+const sina = new student_22(70, 'male', 'adam', "hava");
+sina.change = function (name) {
+    this.mother = name;
 }
-console.log(someone.otherPerson["car4"])
-let x = "lastName";
-console.log(x)
-delete someone["gandom"];
-console.log(someone.fullName())
+sina.change("hor atieh")
+console.log(sina.mother);

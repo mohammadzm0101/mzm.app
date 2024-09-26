@@ -18,3 +18,7 @@ sina.change = function (name) {
 }
 sina.change("hor atieh")
 console.log(sina.mother);
+let mamado = {
+    name: "ali"
+};
+

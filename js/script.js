@@ -18,3 +18,16 @@ sina.change = function (name) {
 }
 sina.change("hor atieh")
 console.log(sina.mother);
+let mamado = {
+    name: "ali"
+};
+function mamado(act1, act2){
+    const mamaliKako =[
+        age : 31,
+        family : "zarei moghadam",
+        name = {
+            action_1 : 'go',
+       action2 : 20 ;
+        }
+    ]
+}

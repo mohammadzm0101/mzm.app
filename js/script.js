@@ -1,20 +1,12 @@
-const person1 = {
-    name: "john",
-    family: "johni"
-};
-let text = "";
-for (let x in person1) {
-    text += person1[x] + " ";
-};
-function student_22(age, jender, father, mothher) {
-    this.age = age,
-        this.jender = jender,
-        this.father = father,
-        this.mother = mothher
-};
-const sina = new student_22(70, 'male', 'adam', "hava");
-sina.change = function (name) {
-    this.mother = name;
+function mamado(act1, act2) {
+    const mamali = {
+        character_1: 'abas gholi',
+        charachter_2: 'mamdolAbadi',
+        character_3: [
+            nasro, mena, allah, va, fathon, gharib
+        ]
+    }
+    return (mamali.charachter_2 + act1 + "      " + act2);
 }
 sina.change("hor atieh")
 console.log(sina.mother);

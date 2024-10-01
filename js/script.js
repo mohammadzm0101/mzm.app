@@ -8,5 +8,18 @@ function mamado(act1, act2) {
     }
     return (mamali.charachter_2 + act1 + "      " + act2);
 }
-
-console.log(mamado('0', '2'));
+sina.change("hor atieh")
+console.log(sina.mother);
+let mamado = {
+    name: "ali"
+};
+function mamado(act1, act2){
+    const mamaliKako =[
+        age : 31,
+        family : "zarei moghadam",
+        name = {
+            action_1 : 'go',
+       action2 : 20 ;
+        }
+    ]
+}

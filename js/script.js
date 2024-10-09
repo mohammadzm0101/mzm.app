@@ -44,6 +44,22 @@ for (let index in third_1) {
 console.log(x3)
 const tree = Object.values(third_1);
 console.log(tree);
-let me3 =JSON.stringify(third_1);
+let me3 = JSON.stringify(third_1);
 // now del {  & " "} create vertical
 console.log(me3);
+function example(name, field, future, end, endNow) {
+    this.black_white = name;
+    this.feature = future;
+    this.group = field;
+    this.fourth = end;
+};
+example.prototype.fifthhh = "notWelcome";
+const exampleObj = new example("mammad", "arasho", "good", "baddd");
+exampleObj.fourth2 = "good"
+exampleObj.fifthhh = "grate"
+exampleObj.newThing = function (name) {
+this.endNow = name;
+};
+exampleObj.newThing("korea");
+// console.log(exampleObj.newThing("korea"));
+console.log(exampleObj);

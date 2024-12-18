@@ -63,3 +63,17 @@ this.endNow = name;
 exampleObj.newThing("korea");
 // console.log(exampleObj.newThing("korea"));
 console.log(exampleObj);
+// const mamadKakoBack = {1:'hi', 2: 'ok'};
+// // it's not common form name bro 
+// let _mrAli ;
+// // no just form main function in library 
+// // let $mrMoney;
+// let ahmad_kako;
+// let _blackHat;
+// let _whiteHat;
+// let _iHackerHaHa;
+// _iHackerHaHa.group;
+// _mrAli.border();
+// console.log(_iHackerHaHa);
+let imBack = "12";
+console.log(imBack);

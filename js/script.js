@@ -75,5 +75,7 @@ console.log(exampleObj);
 // _iHackerHaHa.group;
 // _mrAli.border();
 // console.log(_iHackerHaHa);
-let imBack = "12";
+let imBack = "12      3kk    dsf45   60ddd  go begin jcfd";
 console.log(imBack);
+let k;
+console.log(k);

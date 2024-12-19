@@ -13,8 +13,7 @@ font-face {
   border: 0 none;
   direction: rtl;
   list-style-type: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -27,16 +26,13 @@ body {
   margin: 0;
   /* my wave header */
 }
-
 body .font-english {
   font-family: Arial, Helvetica, sans-serif;
   direction: ltr;
 }
-
 body h4 {
   font-family: Vazirmatn;
 }
-
 body header {
   width: 100%;
   height: 141px;
@@ -49,7 +45,6 @@ body header {
   /*Animation for header wave*/
   /*Shrinking for mobile*/
 }
-
 body header .topNav {
   text-align: center;
   width: 50%;
@@ -57,51 +52,33 @@ body header .topNav {
   vertical-align: middle;
   display: table-cell;
 }
-
 body header .topNav .btn-1 {
-  background: #a188fc;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#a188fc), color-stop(50%, #2eeade), to(#a188fc));
-  background: linear-gradient(to right, #a188fc 0%, #2eeade 50%, #a188fc 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a188fc', endColorstr='#a188fc',GradientType=1 );
-  /* IE6-9 */
+  background: #a188fc; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #a188fc 0%, #2eeade 50%, #a188fc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a188fc", endColorstr="#a188fc",GradientType=1 ); /* IE6-9 */
   background-size: 200%;
   background-position: 100%;
   color: #ccffff;
   padding: 1em 3em;
   border-radius: 2em;
   display: inline-block;
-  -webkit-box-shadow: 0 0 20px #229999;
-          box-shadow: 0 0 20px #229999;
+  box-shadow: 0 0 20px #229999;
   text-shadow: 0 0 5px #000;
-  -webkit-transition: all 0.7s;
   transition: all 0.7s;
   border: solid 1px #333;
 }
-
 body header .topNav .btn-1:hover {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a188fc+0,2eeade+100 */
-  background: #a188fc;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#a188fc), color-stop(50%, #2eeade), to(#a188fc));
-  background: linear-gradient(to right, #a188fc 0%, #2eeade 50%, #a188fc 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a188fc', endColorstr='#a188fc',GradientType=1 );
-  /* IE6-9 */
+  background: #a188fc; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #a188fc 0%, #2eeade 50%, #a188fc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a188fc", endColorstr="#a188fc",GradientType=1 ); /* IE6-9 */
   background-size: 200%;
   background-position: 0px;
-  -webkit-box-shadow: 0 0 40px #55ffff;
-          box-shadow: 0 0 40px #55ffff;
+  box-shadow: 0 0 40px #55ffff;
   color: #ccffff;
   text-shadow: 0 0 30px #000000;
   border: solid 1px #ccffff;
 }
-
 body header .waves {
   position: relative;
   width: 100%;
@@ -111,62 +88,33 @@ body header .waves {
   min-height: 100px;
   max-height: 150px;
 }
-
 body header .parallax > use {
-  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-          animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
-
 body header .parallax > use:nth-child(1) {
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+  animation-delay: -2s;
+  animation-duration: 7s;
 }
-
 body header .parallax > use:nth-child(2) {
-  -webkit-animation-delay: -3s;
-          animation-delay: -3s;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  animation-delay: -3s;
+  animation-duration: 10s;
 }
-
 body header .parallax > use:nth-child(3) {
-  -webkit-animation-delay: -4s;
-          animation-delay: -4s;
-  -webkit-animation-duration: 13s;
-          animation-duration: 13s;
+  animation-delay: -4s;
+  animation-duration: 13s;
 }
-
 body header .parallax > use:nth-child(4) {
-  -webkit-animation-delay: -5s;
-          animation-delay: -5s;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
+  animation-delay: -5s;
+  animation-duration: 20s;
 }
-
-@-webkit-keyframes move-forever {
-  0% {
-    -webkit-transform: translate3d(-90px, 0, 0);
-            transform: translate3d(-90px, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(85px, 0, 0);
-            transform: translate3d(85px, 0, 0);
-  }
-}
-
 @keyframes move-forever {
   0% {
-    -webkit-transform: translate3d(-90px, 0, 0);
-            transform: translate3d(-90px, 0, 0);
+    transform: translate3d(-90px, 0, 0);
   }
   100% {
-    -webkit-transform: translate3d(85px, 0, 0);
-            transform: translate3d(85px, 0, 0);
+    transform: translate3d(85px, 0, 0);
   }
 }
-
 @media (max-width: 768px) {
   body header .waves {
     height: 40px;
@@ -178,5 +126,4 @@ body header .parallax > use:nth-child(4) {
   body header h1 {
     font-size: 24px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

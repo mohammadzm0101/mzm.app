@@ -1,11 +1,10 @@
 @font-face {
-  font-family: 'Vazirmatn';
+  font-family: "Vazirmatn";
   src: url("fonts/webfonts/Vazirmatn[wght].woff2") format("woff2 supports variations"), url("fonts/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +12,7 @@
   border: 0 none;
   direction: rtl;
   list-style-type: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h5 {
@@ -37,5 +35,4 @@ header {
 
 header {
   grid-row-end: auto;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

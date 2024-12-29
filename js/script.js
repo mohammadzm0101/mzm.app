@@ -79,3 +79,9 @@ let imBack = "12      3kk    dsf45   60ddd  go begin jcfd";
 console.log(imBack);
 let k;
 console.log(k);
+document.getElementById("hi").innerHTML = 'hi';
+// del window keyword why? 
+alert("you black hat or white hat?");
+let mzm1= 'security webApp';
+console.log(mzm1);
+

@@ -79,13 +79,9 @@ let imBack = "12      3kk    dsf45   60ddd  go begin jcfd";
 console.log(imBack);
 let k;
 console.log(k);
-function {
-    const mohammad = { 
-        name : 'yes im here but not me its my other things of me you can see ever in your life ',
-        age : '"it/"s not your business'
-        rate : "none scence ",
-        job : 'freelancer + white hat hacker comunity ', 
-        
-    } 
+document.getElementById("hi").innerHTML = 'hi';
+// del window keyword why? 
+alert("you black hat or white hat?");
+let mzm1= 'security webApp';
+console.log(mzm1);
 
-}

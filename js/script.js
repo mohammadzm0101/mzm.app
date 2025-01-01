@@ -58,7 +58,7 @@ const exampleObj = new example("mammad", "arasho", "good", "baddd");
 exampleObj.fourth2 = "good"
 exampleObj.fifthhh = "grate"
 exampleObj.newThing = function (name) {
-this.endNow = name;
+    this.endNow = name;
 };
 exampleObj.newThing("korea");
 // console.log(exampleObj.newThing("korea"));
@@ -82,6 +82,15 @@ console.log(k);
 document.getElementById("hi").innerHTML = 'hi';
 // del window keyword why? 
 alert("you black hat or white hat?");
-let mzm1= 'security webApp';
+let mzm1 = 'security webApp';
+let mrMzM = ' it\'s ocock\'1 tries\'2 ';
 console.log(mzm1);
+const camelCase = '';
+// hidden
+const _cantSeeThis = 'noting';
+// form library 
+const $importantFunctionInsideLibrary = "";
+// plz plz comment in your code tnx ;
+
+console.log(mrMzM);
 

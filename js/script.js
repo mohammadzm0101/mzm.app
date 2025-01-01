@@ -83,8 +83,8 @@ document.getElementById("hi").innerHTML = 'hi';
 // del window keyword why? 
 alert("you black hat or white hat?");
 let mzm1 = 'security webApp';
-console.log(mzm1);
 let mrMzM = ' it\'s ocock\'1 tries\'2 ';
+console.log(mzm1);
 const camelCase = '';
 // hidden
 const _cantSeeThis = 'noting';

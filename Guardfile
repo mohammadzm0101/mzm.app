@@ -14,6 +14,6 @@
 #  $ ln -s config/Guardfile .
 #
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
-guard :haml, input: 'pages', output: 'output' do
-  watch(%r{^pages/.+\.haml$})
+guard :haml, input: 'C:/Users/mohammadzm/OneDrive/Documents/GitHub/mzm.app', output: 'C:/Users/mohammadzm/OneDrive/Documents/GitHub/mzm.app/output' do
+  watch(%r{^C:/Users/mohammadzm/OneDrive/Documents/GitHub/mzm.app/.+\.haml$})
 end

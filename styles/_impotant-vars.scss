@@ -5,3 +5,10 @@
     }
     direction: ltr;
 }
+@mixin font-persian {
+    font: {
+        family: Vazir, Arial, Helvetica, sans-serif;
+        
+    }
+    direction: rtl;
+}

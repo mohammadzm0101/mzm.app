@@ -3,13 +3,13 @@
 
 font-face {
   font-family: "Vazirmatn";
-  src: url("fonts/webfonts/Vazirmatn[wght].woff2")
-      format("woff2 supports variations"),
+  src: url("fonts/webfonts/Vazirmatn[wght].woff2") format("woff2 supports variations"),
     url("fonts/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -19,24 +19,29 @@ font-face {
   list-style-type: none;
   box-sizing: border-box;
 }
+
 // beacause if topnav bottom color
 html {
   height: 100%;
   min-height: 100%;
 }
+
 body {
   background-color: #f5f5f5;
   margin: 0;
+
   //  top navbar bottom
   // display: table;
   .font-english {
     @include font-english;
   }
+
   h4 {
     font: {
       family: Vazirmatn;
     }
   }
+
   /* my wave header */
   header {
     width: 100%;
@@ -48,33 +53,34 @@ body {
     background-color: $backgroundColor5;
     // background: linear-gradient(60deg, $backgroundColor2, $backgroundColor3);
     color: $color1;
+
     .topNav {
       text-align: center;
       width: 50%;
       min-height: 100%;
       vertical-align: middle;
       display: table-cell;
+
       .btn-1 {
-        background: #a188fc; /* Old browsers */
-        background: -moz-linear-gradient(
-          left,
-          #a188fc 0%,
-          #2eeade 50%,
-          #a188fc 100%
-        ); /* FF3.6-15 */
-        background: -webkit-linear-gradient(
-          left,
-          #a188fc 0%,
-          #2eeade 50%,
-          #a188fc 100%
-        ); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(
-          to right,
-          #a188fc 0%,
-          #2eeade 50%,
-          #a188fc 100%
-        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a188fc', endColorstr='#a188fc',GradientType=1 ); /* IE6-9 */
+        background: #a188fc;
+        /* Old browsers */
+        background: -moz-linear-gradient(left,
+            #a188fc 0%,
+            #2eeade 50%,
+            #a188fc 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,
+            #a188fc 0%,
+            #2eeade 50%,
+            #a188fc 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,
+            #a188fc 0%,
+            #2eeade 50%,
+            #a188fc 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a188fc', endColorstr='#a188fc', GradientType=1);
+        /* IE6-9 */
         background-size: 200%;
         background-position: 100%;
         color: #ccffff;
@@ -88,28 +94,28 @@ body {
         transition: all 0.7s;
         border: solid 1px #333;
       }
+
       .btn-1:hover {
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a188fc+0,2eeade+100 */
-        background: #a188fc; /* Old browsers */
-        background: -moz-linear-gradient(
-          left,
-          #a188fc 0%,
-          #2eeade 50%,
-          #a188fc 100%
-        ); /* FF3.6-15 */
-        background: -webkit-linear-gradient(
-          left,
-          #a188fc 0%,
-          #2eeade 50%,
-          #a188fc 100%
-        ); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(
-          to right,
-          #a188fc 0%,
-          #2eeade 50%,
-          #a188fc 100%
-        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a188fc', endColorstr='#a188fc',GradientType=1 ); /* IE6-9 */
+        background: #a188fc;
+        /* Old browsers */
+        background: -moz-linear-gradient(left,
+            #a188fc 0%,
+            #2eeade 50%,
+            #a188fc 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,
+            #a188fc 0%,
+            #2eeade 50%,
+            #a188fc 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,
+            #a188fc 0%,
+            #2eeade 50%,
+            #a188fc 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a188fc', endColorstr='#a188fc', GradientType=1);
+        /* IE6-9 */
         background-size: 200%;
         background-position: 0px;
         box-shadow: 0 0 40px #55ffff;
@@ -129,27 +135,28 @@ body {
       min-height: 100px;
       max-height: 150px;
     }
+
     /*Animation for header wave*/
-    .parallax > use {
+    .parallax>use {
       animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
     }
 
-    .parallax > use:nth-child(1) {
+    .parallax>use:nth-child(1) {
       animation-delay: -2s;
       animation-duration: 7s;
     }
 
-    .parallax > use:nth-child(2) {
+    .parallax>use:nth-child(2) {
       animation-delay: -3s;
       animation-duration: 10s;
     }
 
-    .parallax > use:nth-child(3) {
+    .parallax>use:nth-child(3) {
       animation-delay: -4s;
       animation-duration: 13s;
     }
 
-    .parallax > use:nth-child(4) {
+    .parallax>use:nth-child(4) {
       animation-delay: -5s;
       animation-duration: 20s;
     }

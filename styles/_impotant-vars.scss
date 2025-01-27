@@ -7,8 +7,12 @@
 }
 @mixin font-persian {
     font: {
-        family: Vazir, Arial, Helvetica, sans-serif;
-        
+        family: vazirmatn;
+        src: url("font/webfonts/Vazirmatn[wght].woff2") format("woff2 supports variations"),
+            url("font/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: swap;
     }
     direction: rtl;
 }

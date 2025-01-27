@@ -2,7 +2,7 @@
 @import "impotant-vars";
 
 font-face {
-  font-family: "Vazirmatn";
+  font-family: Vazirmatn;
   src: url("fonts/webfonts/Vazirmatn[wght].woff2") format("woff2 supports variations"),
     url("fonts/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
   font-weight: 100 900;
@@ -36,7 +36,7 @@ body {
     @include font-english;
   }
 
-  h4 {
+  h1#test-js1 {
     font: {
       family: Vazirmatn;
     }

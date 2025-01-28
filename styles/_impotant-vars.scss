@@ -1,7 +1,54 @@
-// for class in this name
+// @include ↓ in css style you wana 
 @mixin font-english {
     font: {
         family: Arial, Helvetica, sans-serif;
     }
+
     direction: ltr;
+}
+
+@mixin font-persian {
+    font: {
+        family: vazirmatn;
+        src: url("font/webfonts/Vazirmatn[wght].woff2") format("woff2 supports variations"),
+            url("font/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    direction: rtl;
+}
+
+// ↓ in * selector in css 
+@mixin basic-style {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: 0 none;
+    /* can change or del ↓  */
+    direction: rtl;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+@mixin html {
+    height: 100%;
+    min-height: 100%;
+
+}
+
+@mixin header {
+    width: 100%;
+    height: 141px;
+    overflow: hidden;
+}
+
+@mixin body {
+    background-color: #f5f5f5;
+    margin: 0;
+
+    font: {
+        family: vazirmatn;
+    }
 }

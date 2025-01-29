@@ -1,52 +1,21 @@
 @import "variable";
 @import "impotant-vars";
-
-font-face {
-  font-family: Vazirmatn;
-  src: url("fonts/webfonts/Vazirmatn[wght].woff2") format("woff2 supports variations"),
-    url("fonts/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
+@include basic-style;
+@include font-persian;
 
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  border: 0 none;
-  direction: rtl;
-  list-style-type: none;
-  box-sizing: border-box;
+  @include basic-style;
 }
 
-// beacause if topnav bottom color
 html {
-  height: 100%;
-  min-height: 100%;
+  @include html;
 }
 
 body {
-  background-color: #f5f5f5;
-  margin: 0;
-
-  //  top navbar bottom
-  // display: table;
-  .font-english {
-    @include font-english;
-  }
-
-  h1#test-js1 {
-    font: {
-      family: Vazirmatn;
-    }
-  }
-
+  @include body;
   /* my wave header */
   header {
-    width: 100%;
-    height: 141px;
-    overflow: hidden;
+    @include header;
     grid-row-end: auto;
     position: relative;
     text-align: center;

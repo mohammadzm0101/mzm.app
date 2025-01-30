@@ -4,7 +4,8 @@
 @include font-persian;
 
 * {
-  @include basic-style;
+  
+   @include basic-style;
 }
 
 html {
@@ -153,7 +154,9 @@ body {
 
       h1 {
         font-size: 24px;
+
       }
     }
   }
 }
+// now @extend can inhirit same attribute for diff class 

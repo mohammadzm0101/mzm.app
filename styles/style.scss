@@ -1,19 +1,17 @@
-@import "variable";
-@import "impotant-vars";
-@include basic-style;
-@include font-persian;
+@use "variable";
+@use "impotant-vars";
 
 * {
-  @include basic-style
+  
+  //  @include basic-style;
 }
 
 html {
-  @include html;
+  // @include html;
 }
 
 body {
   @include body;
-
   /* my wave header */
   header {
     @include header;
@@ -153,8 +151,10 @@ body {
       }
 
       h1 {
-        font-size: 24px;
+        font-size: 240px;
+
       }
     }
   }
 }
+// now @extend can inhirit same attribute for diff class  

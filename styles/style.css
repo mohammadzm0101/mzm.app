@@ -1,9 +1,10 @@
-/* Error: Undefined mixin.
- *    ,
- * 14 |   @include body;
- *    |   ^^^^^^^^^^^^^
- *    '
- *   styles\style.scss 14:3  root stylesheet */
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 2 | @forward "important-vars";
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   styles\_impotant-vars.scss 2:1  @use
+ *   styles\style.scss 2:1           root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 14 \2502    @include body;\d\a    \2502    ^^^^^^^^^^^^^\a    \2575 \a   styles\\style.scss 14:3  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @forward \"important-vars\";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   styles\\_impotant-vars.scss 2:1  @use\a   styles\\style.scss 2:1           root stylesheet";
 }

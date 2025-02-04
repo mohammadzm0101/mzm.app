@@ -1,4 +1,5 @@
 // @include ↓ in css style you wana 
+@forward "important-vars";
 @mixin font-english {
     font: {
         family: Arial, Helvetica, sans-serif;
@@ -6,6 +7,7 @@
 
     direction: ltr;
 }
+
 // maybe change font to variable ↓ 
 @mixin font-persian {
     font: {
@@ -14,8 +16,8 @@
             url("font/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
         font-weight: 100 900;
         font-style: normal;
-        font-display: swap; 
-    } 
+        font-display: swap;
+    }
 
     direction: rtl;
 }
@@ -44,11 +46,12 @@
     overflow: hidden;
 }
 
-@mixin body {
-    background-color: #f5f5f5;
+@mixin body($backgroundColor1) {
+    background-color: $backgroundColor1;
     margin: 0;
 
     font: {
         family: vazirmatn;
     }
-}
+} 
+// today cant focuse on this reviwe but our question in those days 

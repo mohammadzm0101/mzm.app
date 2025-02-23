@@ -1,5 +1,6 @@
 // @include ↓ in css style you wana 
-@forward 'variables';
+@use 'variable';
+
 @mixin font-english {
     font: {
         family: Arial, Helvetica, sans-serif;
@@ -19,7 +20,7 @@
 
     direction: rtl;
     src: url("font/webfonts/Vazirmatn[wght].woff2") format("woff2 supports variations"),
-            url("font/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
+    url("font/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
 }
 
 // ↓ in * selector in css 
@@ -39,19 +40,13 @@
     min-height: 100%;
 
 }
-@mixin body($backgroundColor1) {
+@mixin body($backgroundColor: variable.$backgroundColor1) {
     background: {
-         
-        
-        '
-        
-        
-        
-        color: $backgroundColor1;
+        color: $backgroundColor;
     }
+
     margin: 0;
 
-    
     font: {
         family: vazirmatn;
     }
@@ -65,4 +60,3 @@
 
 // today noting ok than plz do this 
 // should change 
-

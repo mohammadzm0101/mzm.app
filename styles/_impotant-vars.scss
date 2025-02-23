@@ -1,5 +1,5 @@
 // @include ↓ in css style you wana 
-@forward "important-vars";
+@forward 'variables';
 @mixin font-english {
     font: {
         family: Arial, Helvetica, sans-serif;
@@ -12,14 +12,14 @@
 @mixin font-persian {
     font: {
         family: vazirmatn;
-        src: url("font/webfonts/Vazirmatn[wght].woff2") format("woff2 supports variations"),
-            url("font/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
-        font-weight: 100 900;
-        font-style: normal;
-        font-display: swap;
+        weight: 100 900;
+        style: normal;
+        display: swap;
     }
 
     direction: rtl;
+    src: url("font/webfonts/Vazirmatn[wght].woff2") format("woff2 supports variations"),
+            url("font/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
 }
 
 // ↓ in * selector in css 
@@ -39,20 +39,30 @@
     min-height: 100%;
 
 }
+@mixin body($backgroundColor1) {
+    background: {
+         
+        
+        '
+        
+        
+        
+        color: $backgroundColor1;
+    }
+    margin: 0;
+
+    
+    font: {
+        family: vazirmatn;
+    }
+}
 
 @mixin header {
     width: 100%;
     height: 141px;
     overflow: hidden;
 }
+
 // today noting ok than plz do this 
 // should change 
 
-@mixin body($backgroundColor1) {
-    background-color: $backgroundColor1;
-    margin: 0;
-
-    font: {
-        family: vazirmatn;
-    }
-} 

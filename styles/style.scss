@@ -3,18 +3,18 @@
 
 * {
 
-  @extend basic-style;
+  @include impotant-vars.basic-style;
 }
 
 html {
-  @extend html;
+  @include html;
 
   body {
-    @extend body;
+    @include body;
 
     /* my wave header */
     header {
-      @extend header;
+      @include header;
       grid-row-end: auto;
       position: relative;
       text-align: center;

@@ -1,18 +1,134 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @forward "important-vars";
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   styles\_impotant-vars.scss 2:1  @use
- *   styles\style.scss 2:1           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @forward \"important-vars\";\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   styles\\_impotant-vars.scss 2:1  @use\a   styles\\style.scss 2:1           root stylesheet";
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: 0 none;
+  /* can change or del ↓  */
+  direction: rtl;
+  list-style-type: none;
+  box-sizing: border-box;
 }
+
+html {
+  height: 100%;
+  min-height: 100%;
+}
+html body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: vazirmatn;
+  /* my wave header */
+}
+html body header {
+  width: 100%;
+  height: 141px;
+  overflow: hidden;
+  grid-row-end: auto;
+  position: relative;
+  text-align: center;
+  background: linear-gradient(60deg, rgb(4, 245, 245), rgba(51, 255, 0, 0.473));
+  color: #f5f5f5;
+  /*Animation for header wave*/
+  /*Shrinking for mobile*/
+}
+html body header .topNav {
+  text-align: center;
+  width: 50%;
+  min-height: 100%;
+  vertical-align: middle;
+  display: table-cell;
+}
+html body header .topNav .btn-1 {
+  background: #a188fc;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #a188fc 0%, #2eeade 50%, #a188fc 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #a188fc 0%, #2eeade 50%, #a188fc 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #a188fc 0%, #2eeade 50%, #a188fc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a188fc", endColorstr="#a188fc", GradientType=1);
+  /* IE6-9 */
+  background-size: 200%;
+  background-position: 100%;
+  color: #ccffff;
+  padding: 1em 3em;
+  border-radius: 2em;
+  display: inline-block;
+  box-shadow: 0 0 20px #229999;
+  text-shadow: 0 0 5px #000;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
+  border: solid 1px #333;
+}
+html body header .topNav .btn-1:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a188fc+0,2eeade+100 */
+  background: #a188fc;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #a188fc 0%, #2eeade 50%, #a188fc 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #a188fc 0%, #2eeade 50%, #a188fc 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #a188fc 0%, #2eeade 50%, #a188fc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a188fc", endColorstr="#a188fc", GradientType=1);
+  /* IE6-9 */
+  background-size: 200%;
+  background-position: 0px;
+  box-shadow: 0 0 40px #55ffff;
+  color: #ccffff;
+  text-shadow: 0 0 30px #000000;
+  border: solid 1px #ccffff;
+}
+html body header .waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+html body header .parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+html body header .parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+html body header .parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+html body header .parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+html body header .parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+@media (max-width: 768px) {
+  html body header .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  html body header .content {
+    height: 30vh;
+  }
+  html body header h1 {
+    font-size: 240px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

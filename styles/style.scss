@@ -7,20 +7,20 @@
 }
 
 html {
-  @include html;
+  @include impotant-vars.html;
 
   body {
-    @include body;
+    @include impotant-vars.body;
 
     /* my wave header */
     header {
-      @include header;
+      @include impotant-vars.header;
       grid-row-end: auto;
       position: relative;
       text-align: center;
-      background-color: $backgroundColor5;
-      // background: linear-gradient(60deg, $backgroundColor2, $backgroundColor3);
-      color: $color1;
+      
+      background: linear-gradient(60deg, variable.$backgroundColor2, variable.$backgroundColor3);
+      color: variable.$color1;
 
       .topNav {
         text-align: center;

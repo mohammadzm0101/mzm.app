@@ -42,9 +42,7 @@ html body header .topNav {
 html body header .topNav .btn-1 {
   background: #a188fc;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #a188fc 0%, #2eeade 50%, #a188fc 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #a188fc 0%, #2eeade 50%, #a188fc 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #a188fc 0%, #2eeade 50%, #a188fc 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -58,8 +56,6 @@ html body header .topNav .btn-1 {
   display: inline-block;
   box-shadow: 0 0 20px #229999;
   text-shadow: 0 0 5px #000;
-  -webkit-transition: all 0.7s;
-  -moz-transition: all 0.7s;
   transition: all 0.7s;
   border: solid 1px #333;
 }
@@ -67,9 +63,7 @@ html body header .topNav .btn-1:hover {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a188fc+0,2eeade+100 */
   background: #a188fc;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #a188fc 0%, #2eeade 50%, #a188fc 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #a188fc 0%, #2eeade 50%, #a188fc 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #a188fc 0%, #2eeade 50%, #a188fc 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -129,6 +123,4 @@ html body header .parallax > use:nth-child(4) {
   html body header h1 {
     font-size: 240px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -8,6 +8,8 @@
 
 html {
   @include impotant-vars.html;
+  /* form aside element book */
+  overflow: hidden;
 
   body {
     @include impotant-vars.body;
@@ -18,7 +20,7 @@ html {
       grid-row-end: auto;
       position: relative;
       text-align: center;
-      
+
       background: linear-gradient(60deg, variable.$backgroundColor2, variable.$backgroundColor3);
       color: variable.$color1;
 

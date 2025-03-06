@@ -8,8 +8,6 @@
 
 html {
   @include impotant-vars.html;
-  /* form aside element book */
-  overflow: hidden;
 
   body {
     @include impotant-vars.body;
@@ -157,6 +155,16 @@ html {
 
         }
       }
+    }
+
+    aside {
+      background: radial-gradient(#e99b0b, #9C8763);
+      perspective: 900px;
+      margin: 0;
+      overflow: hidden;
+      width: 100px;
+      height: 400px;
+
     }
   }
 }

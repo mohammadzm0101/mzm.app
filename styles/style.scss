@@ -157,14 +157,55 @@ html {
       }
     }
 
-    aside {
-      background: radial-gradient(#e99b0b, #9C8763);
+    .book-side {
+      height: 100%;
+      overflow: hidden;
+      background: radial-gradient(#e4afa6, #9C8763);
       perspective: 900px;
       margin: 0;
-      overflow: hidden;
-      width: 100px;
-      height: 400px;
-
     }
+
+    .book-side #flip {
+      animation: wrapper 6s ease-in-out infinte;
+      height: 350px;
+      width: 253px;
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      transform: translateZ(-10px) rotateX(60deg) rotateZ(29deg) rotateY(0deg);
+      transform-style: preserve-3d;
+      transform-origin: 0 0 0;
+    }
+
+    @keyframes wrapper {
+      50% {
+        transform: translateZ(-10px) rotateX(60deg) rotateZ(29deg)rotateY(-180deg);
+      }
+    }
+
+    div {
+      height: 350px;
+      width: 24px;
+      position: absolute;
+      left: calc(100% - 1px);
+      transform-origin: 0 100%;
+      transform-style: preserve-3d;
+      background-size: 253px 350px;
+    }
+
+    #front,
+    #front div {
+      background-image:
+        url(http://blogs.slj.com/afuse8production/files/2012/06/Hobbit1.jpg);
+      box-shadow: inset rgba(255, 255, 255, 0.3) 0px -1px 0 0, #35582c 0px 1px 0px 0px;
+
+      div>div>div>div>div>div>div>div>div>div>div {
+        box-shadow: inset rgba(255, 255, 255, 0.3) 0px -1px 0 0, #35582c 0px 1px 0px 0px;
+      }
+    }
+   #back{
+    
+
+   } 
   }
 }

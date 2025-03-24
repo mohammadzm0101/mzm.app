@@ -5,13 +5,13 @@ function mamado(act1, act2) {
     }
     return mamali.charachter_2 + "   " + (24 / 2) + "   " + act1 + "    " + act2;
 }
-console.log(mamado())
+console.log(mamado(1, 2));
 // form private variable use _ ;)
 let _x = mamado()
 const myObject = {
     first: 'hi',
     second: 'hello'
-};
+}
 myObject.first_1 = "john";
 myObject.first_1 = "little john";
 console.log(myObject.first_1);
@@ -93,4 +93,6 @@ const $importantFunctionInsideLibrary = "";
 // plz plz comment in your code tnx ;
 // 
 console.log(mrMzM);
+// new journey
+
 

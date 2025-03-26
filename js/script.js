@@ -55,8 +55,8 @@ function example(name, field, future, end, endNow) {
 };
 example.prototype.fifthhh = "notWelcome";
 const exampleObj = new example("mammad", "arasho", "good", "baddd");
-exampleObj.fourth2 = "good"
-exampleObj.fifthhh = "grate"
+exampleObj.fourth2 = "good";
+exampleObj.fifthhh = "grate"; 
 exampleObj.newThing = function (name) {
     this.endNow = name;
 };
@@ -91,8 +91,23 @@ const _cantSeeThis = 'noting';
 // form library 
 const $importantFunctionInsideLibrary = "";
 // plz plz comment in your code tnx ;
-// 
 console.log(mrMzM);
 // new journey
-
+document.getElementById("whiteHatHacher1").innerHTML = "<h1>hello........................</h1>";
+// document.getElementById("whiteHatHacher1").innerText = "form all the land...........";
+// let a, b, c;
+// a = 4;
+// b = 2;
+// c = 8;
+// c = a + b
+a = 5; b = 6; c = a + b;
+console.log(c);
+let x = 6;
+let y = "not be happy";
+let z = 11;
+let m = 13; 
+let o = 34; 
+let hiGuys = "hi guys";
+let hiGuys2 = "hi every body";
+let hiGuys3 = "plz just do your job & back to your home never back to your mom again like looser child ok tnx";
 

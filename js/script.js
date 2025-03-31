@@ -130,4 +130,57 @@ family2 = 'bodyguard',
 lastName2 = 200;
 let x6;
 console.log(x6);
+function name1(params) {
+    
+    let identifiresss$;
+    identifiresss$ = 3;
+};
+// fualt to declater outside scope
+identifiresss$ = 303030;
+// const it 
+const dinasors = ["Trex", "Tyrannosaurus", "Velociraptor", "Stegosaurus"];
+dinasors[0] = "Tyrannosaurus";
+dinasors[1] = "Velociraptor";
+dinasors[2] = 'stoooooory ha ha';
+dinasors.push("ha ha dinasor");
+const birdsInJorsic = {
+       first: "Tyrannosaurus",
+       second: "arsin dinasor",
+       third: "other arsin dinasor"
+};
+birdsInJorsic.first = "Tynaasoooo";
+birdsInJorasic.forth = "big t rex";
+// var hoisted & bind 
+let x7 = z + y;
+// operators: arithmetic
+let a = 3;
+let x8 = (4*3)+2-(2*3);
+let y4 = 4**3;
+console.log(y4);
+// errors in javascript solve
+let y5 = 16 / 4;
+let z = 16 % 4;
+let z3 = 16 ;
+let z6 = 16 ++;
+let z7 = 16 --;
+// assignment operators
+20 *= 5;
+40 %= 4;
+50 /= 5;
+28 += 3;
+2 **= 3;
+// company
+let x100 = 100;
+let x103 = 103;
+const resault = x100 > x103;
+100 == x100;
+100 === x100;
+100 != x100;
+100 !== x100;
+100 <= x100;
+100 >= x100;
+100 ? x100 : x103;
+let y333 = 0.01 + "mzm";
+console.log(resault);
 
+    

@@ -2,7 +2,6 @@
 @use 'impotant-vars';
 
 * {
-
   @include impotant-vars.basic-style;
 }
 
@@ -21,8 +20,12 @@ html {
 
       background: linear-gradient(60deg, variable.$backgroundColor2, variable.$backgroundColor3);
       color: variable.$color1;
+      #header-container-grid{
+        display: grid;
+        gap: 10px;
+      }
 
-      .topNav {
+      .menu-buttons {
         text-align: center;
         width: 50%;
         min-height: 100%;

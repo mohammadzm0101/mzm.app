@@ -22,10 +22,10 @@ html {
       color: variable.$color1;
       #header-container-grid{
         display: grid;
-        gap: 10px;
+        gap: 100px
       }
 
-      .menu-buttons {
+      .header-buttons {
         text-align: center;
         width: 50%;
         min-height: 100%;

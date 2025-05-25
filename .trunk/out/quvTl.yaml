@@ -1,0 +1,46 @@
+trunk_cli_version: 1.22.15
+title: Exception occurred while installing haml-lint
+report:
+  - command: |
+      'C:\Users\mohammadzm\AppData\Local\trunk\tools\ruby-install\3.4.2-48c42caf766d6ee994183ce5a331a231/bin\gem.cmd' install --no-document haml_lint:0.40.0
+    stdin_path: (none)
+    run_from: C:\Users\mohammadzm\AppData\Local\trunk\tools\haml-lint\0.40.0-359f51144b093d4e5bae56b8faedbf75
+    timeout: 10m
+    rerun: "(cd C:\\Users\\mohammadzm\\AppData\\Local\\trunk\\tools\\haml-lint\\0.40.0-359f51144b093d4e5bae56b8faedbf75; env -i HOME= 'LD_LIBRARY_PATH=C:\\Users\\mohammadzm\\AppData\\Local\\trunk\\tools\\ruby-install\\3.4.2-48c42caf766d6ee994183ce5a331a231/lib' 'PATH=C:\\Users\\mohammadzm\\AppData\\Local\\trunk\\tools\\haml-lint\\0.40.0-359f51144b093d4e5bae56b8faedbf75/bin;C:\\Users\\mohammadzm\\AppData\\Local\\trunk\\tools\\git-bash\\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/bin;C:\\Users\\mohammadzm\\AppData\\Local\\trunk\\tools\\git-bash\\2.40.1-da0c3e1526d36e62bf43d06ec46c5052/usr/bin;C:\\Users\\mohammadzm\\AppData\\Local\\trunk\\tools\\ruby-install\\3.4.2-48c42caf766d6ee994183ce5a331a231/bin' 'GEM_HOME=C:\\Users\\mohammadzm\\AppData\\Local\\trunk\\tools\\haml-lint\\0.40.0-359f51144b093d4e5bae56b8faedbf75' 'GEM_PATH=C:\\Users\\mohammadzm\\AppData\\Local\\trunk\\tools\\haml-lint\\0.40.0-359f51144b093d4e5bae56b8faedbf75' SYSTEMDRIVE=C: 'HOMEPATH=\\Users\\mohammadzm' 'SystemRoot=C:\\Windows' 'windir=C:\\Windows' 'APPDATA=C:\\Users\\mohammadzm\\AppData\\Roaming' 'LOCALAPPDATA=C:\\Users\\mohammadzm\\AppData\\Local' 'USERPROFILE=C:\\Users\\mohammadzm' 'TMP=C:\\Users\\MOHAMM~1\\AppData\\Local\\Temp' 'TEMP=C:\\Users\\MOHAMM~1\\AppData\\Local\\Temp' 'Path=C:\\Python313\\Scripts\\;C:\\Python313\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;c:\\Program Files\\git\\bin;c:\\Program Files\\Git\\cmd;C:\\Users\\mohammadzm\\.console-ninja\\.bin;C:\\Ruby33-x64\\bin;C:\\Users\\mohammadzm\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\mohammadzm\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\mohammadzm\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\mohammadzm\\AppData\\Roaming\\npm;c:\\Users\\mohammadzm\\.cache\\trunk\\launcher;c:\\Users\\mohammadzm\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand' 'C:\\Users\\mohammadzm\\AppData\\Local\\trunk\\tools\\ruby-install\\3.4.2-48c42caf766d6ee994183ce5a331a231/bin\\gem.cmd' install --no-document haml_lint:0.40.0)"
+    exit_status: exited
+    exit_code: 1
+    stdout: (none)
+    stderr: |
+      ERROR:  While executing gem ... (Gem::Exception)
+          OpenSSL is not available. Install OpenSSL and rebuild Ruby or use non-HTTPS sources (Gem::Exception)
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/request.rb:53:in 'Gem::Request.configure_connection_for_https'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/request/https_pool.rb:7:in 'Gem::Request::HTTPSPool#setup_connection'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/request/http_pool.rb:40:in 'Gem::Request::HTTPPool#make_connection'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/request/http_pool.rb:21:in 'Gem::Request::HTTPPool#checkout'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/request.rb:135:in 'Gem::Request#connection_for'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/request.rb:193:in 'Gem::Request#perform_request'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/request.rb:160:in 'Gem::Request#fetch'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/remote_fetcher.rb:317:in 'Gem::RemoteFetcher#request'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/remote_fetcher.rb:213:in 'Gem::RemoteFetcher#fetch_http'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/remote_fetcher.rb:252:in 'Gem::RemoteFetcher#fetch_path'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/source.rb:86:in 'Gem::Source#dependency_resolver_set'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/resolver/best_set.rb:24:in 'block in Gem::Resolver::BestSet#pick_sets'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/source_list.rb:94:in 'Array#each'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/source_list.rb:94:in 'Gem::SourceList#each_source'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/resolver/best_set.rb:23:in 'Gem::Resolver::BestSet#pick_sets'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/resolver/best_set.rb:29:in 'Gem::Resolver::BestSet#find_all'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/resolver/installer_set.rb:174:in 'Gem::Resolver::InstallerSet#find_all'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/resolver/installer_set.rb:62:in 'Gem::Resolver::InstallerSet#add_always_install'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/dependency_installer.rb:318:in 'Gem::DependencyInstaller#resolve_dependencies'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/commands/install_command.rb:198:in 'Gem::Commands::InstallCommand#install_gem'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/commands/install_command.rb:223:in 'block in Gem::Commands::InstallCommand#install_gems'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/commands/install_command.rb:216:in 'Array#each'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/commands/install_command.rb:216:in 'Gem::Commands::InstallCommand#install_gems'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/commands/install_command.rb:162:in 'Gem::Commands::InstallCommand#execute'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/command.rb:326:in 'Gem::Command#invoke_with_build_args'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/command_manager.rb:253:in 'Gem::CommandManager#invoke_command'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/command_manager.rb:194:in 'Gem::CommandManager#process_args'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/command_manager.rb:152:in 'Gem::CommandManager#run'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/lib/ruby/3.4.0/rubygems/gem_runner.rb:57:in 'Gem::GemRunner#run'
+      	C:/Users/mohammadzm/AppData/Local/trunk/tools/ruby-install/3.4.2-48c42caf766d6ee994183ce5a331a231/bin/gem.cmd:20:in '<main>'
+

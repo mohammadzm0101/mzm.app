@@ -1,0 +1,4 @@
+trunk_cli_version: 1.22.15
+title: "Error while executing: indexII.html"
+report:
+  - "filesystem error: in create_hard_link: Invalid argument [\"C:\\Users\\mohammadzm\\AppData\\Local\\Temp\\trunk\\lobt3zi\\index.haml\"] [\"C:\\Users\\mohammadzm\\AppData\\Local\\Temp\\trunk\\1girz6p\\euf3owv\\index.haml\"]"

@@ -1,0 +1,4 @@
+trunk_cli_version: 1.22.15
+title: "Error while executing: js\\script.js"
+report:
+  - "filesystem error: in create_hard_link: Invalid argument [\"C:\\Users\\mohammadzm\\AppData\\Local\\Temp\\trunk\\jc5k4r5\\index.haml\"] [\"C:\\Users\\mohammadzm\\AppData\\Local\\Temp\\trunk\\mw3rwlv\\dcmng3z\\index.haml\"]"

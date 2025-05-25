@@ -1,0 +1,63 @@
+// @include ↓ in css style you wana 
+@use 'variable';
+// features : %placeHolder(Xno) @mixin( argument $variable)
+// usage         @extend(share)     @include(reusable)     
+// ↓ in * selector in css 
+@mixin basic-style {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: 0 none;
+    /* can change or del ↓  */
+    direction: rtl;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+@mixin font-english {
+    font: {
+        family: Arial, Helvetica, sans-serif;
+    }
+
+    direction: ltr;
+}   
+
+// maybe change font to variable ↓ 
+@mixin font-persian {
+    font: {
+        family: vazirmatn;
+        weight: 100 900;
+        style: normal;
+        display: swap;
+    }
+
+    direction: rtl;
+    src: url("font/webfonts/Vazirmatn[wght].woff2") format("woff2 supports variations"),
+    url("font/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
+}
+
+
+@mixin html {
+    height: 100%;
+    min-height: 100%;
+
+}
+@mixin body($backgroundColor: variable.$backgroundColor1) {
+    background: {
+        color: $backgroundColor;
+    }
+
+    margin: 0;
+
+    font: {
+        family: vazirmatn;
+    }
+}
+
+@mixin header {
+    width: 100%;
+    height: 141px;
+    overflow: hidden;
+} 
+
+// today noting ok than plz do this 
+// should change  today just focuse on night search mobile first & cross browser 

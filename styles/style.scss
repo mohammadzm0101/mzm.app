@@ -1,22 +1,42 @@
 // for pertial files(from organized)
 @use 'variable';
-@use 'important-declarations';
+@use 'mixins-pholders';
 
 * {
-  @include important-declarations.basic-style;
+  @include mixins-pholders.universal-tag;
 }
 
 html {
-  @include important-declarations.html;
+  @extend %html;
 
   body {
-    @include important-declarations.body;
+    @include mixins-pholders.body;
 
     /* my wave header use position just form lay out */
     header {
-      @include important-declarations.header;
+      @include mixins-pholders.header;
+
       // need to change with grid
-      
+      .header-menu {
+           max-width: 1296px;
+          height: 48px;
+        // .logo {}
+
+        .menu-navigation {
+       
+
+          
+          /*.menu-list {
+            .menu-item {
+              a {}
+
+              span {}
+            }
+          }*/
+
+        }
+
+      }
     }
   }
 }

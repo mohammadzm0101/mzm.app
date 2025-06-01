@@ -25,15 +25,19 @@ html body header {
 html body header .header-menu {
   max-width: 1296px;
   height: 48px;
+  /* .logo {}*/
 }
 html body header .header-menu .menu-navigation {
+  display: flex;
   /*.menu-list {
-    .menu-item {
-      a {}
+      .menu-item {
+        .menu-link {}
 
-      span {}
-    }
-  }*/
+        .menu-text {}
+      }
+      .menu-contact {
+  }
+    }*/
 }
 
 /*
@@ -164,6 +168,4 @@ html body header .header-menu .menu-navigation {
   letter-spacing: 0;
   line-height: 18.2px;
 }
-*/
-
-/*# sourceMappingURL=style.css.map */
+*//*# sourceMappingURL=style.css.map */

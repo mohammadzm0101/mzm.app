@@ -1,0 +1,5 @@
+[05-15 07:23:00] [client.cc:330] prettier - .trunk\trunk.yaml
+[05-15 08:29:06] [login.cc:52] GetUserRequest failed with status 14: errors resolving api.trunk.io:8443: [field:hostname lookup error:address lookup failed for api.trunk.io:8443: DNS query cancelled] 
+[05-15 08:30:20] [upgrade.cc:225] Error during upgrade --notify: cli: 1 linter: 0 plugin: 0 runtime: 0
+[05-15 09:33:01] [upgrade.cc:225] Error during upgrade --notify: cli: 1 linter: 0 plugin: 0 runtime: 0
+[05-16 08:29:03] [login.cc:52] GetUserRequest failed with status 16: No session provided 

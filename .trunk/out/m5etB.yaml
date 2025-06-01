@@ -1,4 +1,0 @@
-trunk_cli_version: 1.22.15
-title: "Error while executing: styles\\style.css"
-report:
-  - "filesystem error: in create_hard_link: Invalid argument [\"C:\\Users\\mohammadzm\\AppData\\Local\\Temp\\trunk\\ryqfo1b\\index.haml\"] [\"C:\\Users\\mohammadzm\\AppData\\Local\\Temp\\trunk\\zyeoht5\\kw62e6k\\index.haml\"]"

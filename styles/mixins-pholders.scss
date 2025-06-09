@@ -1,7 +1,6 @@
-// @include ↓ in css style you wana 
 @use 'variable';
-
-@mixin universal-tag {
+// basic mixins and pholders
+%universal-tag {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -15,21 +14,19 @@
 %html {
     height: 100%;
     min-height: 100%;
-    direction: ltr;
+    direction: rtl;
 
 }
-
-@mixin body($bg-color : variable.$bg-color2) {
-    background-color: $bg-color;
+%body {
+    background-color: $bg-color1;
 }
-
-@mixin header {
+%header {
     max-width: 100%;
     height: 48px;
-    // temporary re use again 
+    // temporary  
     // overflow: hidden;
 }
-
+// repeatly mixins
 @mixin font-english {
     font: {
         family: Arial, Helvetica, sans-serif;
@@ -37,7 +34,6 @@
 
     direction: ltr;
 }
-
 // maybe change font to variable ↓ 
 @mixin font-persian {
     font: {
@@ -51,3 +47,17 @@
     src: url("font/webfonts/Vazirmatn[wght].woff2") format("woff2 supports variations"),
     url("font/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
 }
+// utilities
+
+//  for  block inline responsive 
+// @mixin responsive-text($textsize, variables.$text-size){
+    // font: {    //(1rem,1vm = 1% )
+//         size: $textsize;
+//     }
+// }
+
+//@mixin reponsive-box{   // for block responsive 
+//    max-width: 45px;
+ //  margin : auto;
+//}
+// layout mobile first responsive design

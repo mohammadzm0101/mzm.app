@@ -3,18 +3,18 @@
 @use 'mixins-pholders';
 
 * {
-  @include mixins-pholders.universal-tag;
+  @extend %universal-tag;
 }
 
 html {
   @extend %html;
 
   body {
-    @include mixins-pholders.body;
+    @extend %body;
 
     /* my wave header use position just form lay out */
     header {
-      @include mixins-pholders.header;
+      @extend %header;
 
       // need to change with grid
       .header-menu {

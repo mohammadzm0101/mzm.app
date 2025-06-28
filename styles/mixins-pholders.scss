@@ -1,3 +1,4 @@
+/* trunk-ignore-all(prettier) */
 @use 'variable';
 // basic mixins and pholders
 %universal-tag {
@@ -8,7 +9,7 @@
     list-style-type: none;
     box-sizing: border-box;
     // temperary
-    color: red;
+    // color: red;
 }
 
 %html {
@@ -18,13 +19,14 @@
 
 }
 %body {
-    background-color: $bg-color1;
+    background-color: variable.$bg-color2;
 }
 %header {
     max-width: 100%;
     height: 48px;
-    // temporary  
+    // temporary
     // overflow: hidden;
+    background-color: variable.$bg-color1;
 }
 // repeatly mixins
 @mixin font-english {

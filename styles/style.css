@@ -3,71 +3,129 @@
     padding: 0;
     text-decoration: none;
     border: 0 none;
+    direction: rtl;
     list-style-type: none;
     box-sizing: border-box
 }
 
 html {
     height: 100%;
-    min-height: 100%;
-    direction: rtl
+    min-height: 100%
 }
 
 html body {
-    background-color: #fff
+    background-color: #fff;
+    margin: 0;
+    font-family: vazirmatn
 }
 
 html body header {
-    max-width: 100%;
-    height: 48px;
-    background-color: #0ee7b1
+    width: 100%;
+    height: 141px;
+    overflow: hidden;
+    grid-row-end: auto;
+    position: relative;
+    text-align: center;
+    background: linear-gradient(60deg, rgb(4, 245, 245), rgba(51, 255, 0, 0.473));
+    color: #f5f5f5
 }
 
-html body header .header-menu {
-    max-width: 1296px;
-    height: 48px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    justify-content: center
+html body header .header-button1 {
+    text-align: center;
+    width: 50%;
+    min-height: 100%;
+    vertical-align: middle;
+    display: table-cell
 }
 
-html body header .header-menu .logo {
-    max-width: 100px;
-    height: 50px;
-    background-color: red
+html body header .header-button1 .btn-1 {
+    background: #a188fc;
+    background: linear-gradient(to right, #a188fc 0%, #2eeade 50%, #a188fc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a188fc", endColorstr="#a188fc", GradientType=1);
+    background-size: 200%;
+    background-position: 100%;
+    color: #cff;
+    padding: 1em 3em;
+    border-radius: 2em;
+    display: inline-block;
+    box-shadow: 0 0 20px #299;
+    text-shadow: 0 0 5px #000;
+    transition: all .7s;
+    border: solid 1px #333
 }
 
-html body header .header-menu .menu-navigation {
-    background-color: #2e2929;
-    display: flex;
-    flex-direction: row
+html body header .header-button1 .btn-1:hover {
+    background: #a188fc;
+    background: linear-gradient(to right, #a188fc 0%, #2eeade 50%, #a188fc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a188fc", endColorstr="#a188fc", GradientType=1);
+    background-size: 200%;
+    background-position: 0px;
+    box-shadow: 0 0 40px #5ff;
+    color: #cff;
+    text-shadow: 0 0 30px #000;
+    border: solid 1px #cff
 }
 
-html body header .header-menu .menu-navigation .menu-list {
-    display: flex;
-    flex-direction: row
+html body header .waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px
 }
 
-html body header .header-menu .menu-navigation .menu-list .menu-item {
-    background-color: #7fff00
+html body header .parallax>use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite
 }
 
-html body header .header-menu .menu-navigation .menu-list .menu-item .menu-link {
-    background-color: green
+html body header .parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s
 }
 
-html body header .header-menu .menu-navigation .menu-list .menu-item .menu-text {
-    background-color: #adff2f
+html body header .parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s
 }
 
-html body header .header-menu .menu-contact {
-    width: 100px;
-    height: 50px;
-    background-color: rgba(85, 73, 3, .795)
+html body header .parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s
 }
 
-html body header .header-menu .menu-contact .contact-text {
-    background-color: #00f7ff
+html body header .parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0)
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0)
+    }
+}
+
+@media(max-width: 768px) {
+    html body header .waves {
+        height: 40px;
+        min-height: 40px
+    }
+
+    html body header .content {
+        height: 30vh
+    }
+
+    html body header h1 {
+        font-size: 240px
+    }
+}
+
+html body .grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto
 }

@@ -11,6 +11,8 @@ html {
 
   body {
     @extend %body;
+  @include mixins-pholders.font-english;
+
 
     /* my wave header use position just form lay out */
     header {
@@ -20,50 +22,66 @@ html {
       .header-menu {
         max-width: 1296px;
         // temporary
-        // height: 48px;
-        height: 100px;
+        height: 48px;
+        // height: 100px;
         // header menu layout with flex mobileFirst responsive 
         display: flex;
         // temporary
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     // flex items
 
-        //logobox 
-        .logo {
-          //temporary
-          // max-width: 100px;
-          height: inherit;
-          background-color: red;
-          /* flex order */
-          order: 3;
-          flex-grow: 1;
-          flex-shrink: 2;
-          flex-basis: content;
-          align-self: center;
+ .menu-contact {
+   max-width: 152px;
+   height: inherit;
+  //  inside menu-contact Box
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+
+   // temporary
+     
+          background-color: rgba(85, 73, 3, 0.795);
+          // box inside lay out float & position
+          /* flex item */ 
+          order: 1;
+          // flex-grow: 1;
+          // flex-shrink: 2;
+          // flex-basis: 0%;
+          // flex: ;
+          
+
+          .contact-text {
+            color: blue;
+            background-color: rgb(0, 247, 255);
+          }
         }
 
         .menu-navigation {
+          max-width: 429.84px;
+          height: inherit;
           // temperary
-          background-color: rgb(45, 190, 9);
+          background-color: rgb(178, 190, 9);
           /* flex item */
           order: 2;
-          flex-grow: 2;
-          flex-shrink: 1;
-          flex-basis: content;
+          // flex-grow: 2;
+          // flex-shrink: 1;
+          // flex-basis: content;
           .menu-list {
-            /* flex container menu list */
-          order: 2;
+            // temporary
+            /* flex container for menu list */
             display: flex;
-            flex-direction: row;
+             flex-direction: row;
+            justify-content: center;
             .menu-item {
               // temporary
-              background-color: chartreuse;
-
+              background-color: rgb(200, 255, 0);
               .menu-link {
-                background-color: green;
+                background-color: rgb(128, 94, 0);
               }
 
               .menu-text {
@@ -73,27 +91,18 @@ html {
             }
           }
         }
-        .menu-contact {
-          // display: none;
-          // temporary
-          // width: 100px;
-          height: inherit;
-          // height: fit-content;
-          background-color: rgba(85, 73, 3, 0.795);
-          display: flex;
-          direction: row;
-          /* flex item */
-          order: 1;
-          flex-grow: 1;
-          flex-shrink: 2;
-          flex-basis: auto;
-
-          .contact-text {
-            color: blue;
-            background-color: rgb(0, 247, 255);
-          }
+               //logobox 
+        .logo {
+          max-width: 196px;
+          height: 40px;
+          //temporary
+          background-color: red;
+          order: 3;
+          // flex-grow: 1;
+          // flex-shrink: 2;
+          // flex-basis: auto;
+          // align-self: center;
         }
-
       }
 
     }

@@ -3,44 +3,80 @@
 @use 'mixins-pholders';
 
 * {
-  @include mixins-pholders.universal-tag;
+  @extend %universal-tag;
 }
 
 html {
   @extend %html;
 
   body {
-    @include mixins-pholders.body;
+    @extend %body;
 
     /* my wave header use position just form lay out */
     header {
-      @include mixins-pholders.header;
+      @extend %header;
 
       // need to change with grid
       .header-menu {
-           max-width: 1296px;
-          height: 48px;
-        /* .logo {}*/
+        max-width: 1296px;
+        height: 48px;
+        // header menu layout with flex mobileFirst responsive 
+        display: flex;
+        // temporary
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        //logobox 
+        .logo {
+          //temporary
+          max-width: 100px;
+          height: 50px;
+          background-color: red;
+        }
 
         .menu-navigation {
-       
-display: flex;
+          // temperary
+          background-color: rgb(46, 41, 41);
+          display: flex;
+          flex-direction: row;
 
-
-          /*.menu-list {
+          .menu-list {
+            display: flex;
+            flex-direction: row;
             .menu-item {
-              .menu-link {}
+              // temporary
+              background-color: chartreuse;
 
-              .menu-text {}
+              .menu-link {
+                background-color: green;
+              }
+
+              .menu-text {
+                // tempoarary
+                background-color: greenyellow;
+              }
             }
-            .menu-contact {
+          }
         }
-          }*/
+        .menu-contact {
+          // display: none;
+          // temporary
+          width: 100px;
+          height: 50px;
+          // height: fit-content;
+          background-color: rgba(85, 73, 3, 0.795);
 
+          .contact-text {
+            color: blue($color: #3001ff);
+            background-color: rgb(0, 247, 255);
+          }
         }
 
 
       }
+
     }
   }
 }
@@ -176,5 +212,3 @@ display: flex;
   line-height: 18.2px;
 }
 */
-
-
